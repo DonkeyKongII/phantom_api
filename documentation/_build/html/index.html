@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to phantom_api’s documentation! &mdash; phantom_api 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="phantom_api 1.0 documentation" href="#"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> phantom_api
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to phantom_api’s documentation!</a></li>
+<li><a class="reference internal" href="#about-the-phantom-api-wrapper">About the phantom_api wrapper.</a></li>
+<li><a class="reference internal" href="#using-the-phantom-api-wrapper">Using the phantom API wrapper.</a></li>
+<li><a class="reference internal" href="#what-s-next">What’s next?</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">phantom_api</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to phantom_api’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-phantom-api-s-documentation">
+<h1>Welcome to phantom_api’s documentation!<a class="headerlink" href="#welcome-to-phantom-api-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This documentation is alpha v0.1.</p>
+</div>
+<div class="section" id="about-the-phantom-api-wrapper">
+<h1>About the phantom_api wrapper.<a class="headerlink" href="#about-the-phantom-api-wrapper" title="Permalink to this headline">¶</a></h1>
+<p>This is designed to be a python interface to phantom REST api, to ease use and speed up development.</p>
+<p>The code is broken up into several modules which themselves contain the classes you may need to access. More information
+about the modules can be found at <a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a>:</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>ph_actions.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains classes:</dt>
+<dd><ul class="first last">
+<li>ph_action - for starting new actions and getting action status</li>
+<li>ph_playbook - for starting new playbooks and geting playbook status</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_assets.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains class:</dt>
+<dd><ul class="first last">
+<li>ph_asset - for creating an manipulating new and existing assets</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_base.py (module file):</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains module methods:</dt>
+<dd><ul class="first last">
+<li>query - for searching for phantom objects (e.g. containers, artifacts, etc.)</li>
+<li>get_audit_data - for retrieving audit get_audit_data</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_cases.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains classes:</dt>
+<dd><ul class="first last">
+<li>ph_case - case templates</li>
+<li>ph_phase - case template ph_asset</li>
+<li>ph_task - case template tasks</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_consts.py</dt>
+<dd><ul class="first last">
+<li>This file contains constants which you may review for reference but are unlikely to be used by you.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_events.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains classes:</dt>
+<dd><ul class="first last">
+<li>ph_container - for creating and manipulating containers</li>
+<li>ph_artifact - for creating and manipulating artifacts</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_lists.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains class:</dt>
+<dd><ul class="first last">
+<li>ph_list - for creating phantom custom ph_lists</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ph_users.py</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>contains class:</dt>
+<dd><ul class="first last">
+<li>ph_user - for creating phantom users</li>
+<li>ph_role - for creating phantom roles</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Addition information about these modules and each supported method can be found in the <a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a>.</p>
+</div>
+<div class="section" id="using-the-phantom-api-wrapper">
+<h1>Using the phantom API wrapper.<a class="headerlink" href="#using-the-phantom-api-wrapper" title="Permalink to this headline">¶</a></h1>
+<p>Most of the classes will have instance and classes methods. The instance methods are primarily
+designed for when you want to create new objects in phantom while the class methods are for when
+an object already exists and you have some information about it but want to get more, or you want to
+update it.</p>
+<p>Here is an example using the instance methods to create a role:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#here I will create a role using the instance methods</span>
+<span class="n">role</span> <span class="o">=</span> <span class="n">ph_role</span><span class="p">(</span>
+    <span class="s1">&#39;Test Role&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Testing role creation&#39;</span><span class="p">,</span>
+    <span class="n">permissions</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;containers&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;view&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+            <span class="s1">&#39;edit&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+            <span class="s1">&#39;delete&#39;</span><span class="p">:</span> <span class="bp">True</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">role</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c1"># when I save the role.role_id property is automatically updated</span>
+
+<span class="c1"># update the role now with the instance method</span>
+<span class="n">role</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">add_users</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># role now has users with ids 1 and 2 added</span>
+</pre></div>
+</div>
+<p>Here is an example using the class methods to update a pre-existing role which has an id of 77. Notice that I don’t need to needlessly create an instance of ph_role.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># here I will update an existing rol with id of 77</span>
+<span class="n">ph_role</span><span class="o">.</span><span class="n">update_role</span><span class="p">(</span><span class="n">role_id</span><span class="o">=</span><span class="mi">77</span><span class="p">,</span> <span class="n">add_users</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># add users with id&#39;s of 1 and 2 to the role</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-s-next">
+<h1>What’s next?<a class="headerlink" href="#what-s-next" title="Permalink to this headline">¶</a></h1>
+<p>Testing. Please tests and send me your bugs (i’m sure there are plenty) - <a class="reference external" href="mailto:ian&#46;forrest&#37;&#52;&#48;phantom&#46;us">ian<span>&#46;</span>forrest<span>&#64;</span>phantom<span>&#46;</span>us</a></p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ian Forrest.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

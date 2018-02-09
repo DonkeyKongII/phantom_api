@@ -1,0 +1,2177 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>phantom_api package &mdash; phantom_api 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="phantom_api 1.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> phantom_api
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">phantom_api package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_actions">phantom_api.ph_actions module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_assets">phantom_api.ph_assets module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_base">phantom_api.ph_base module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_cases">phantom_api.ph_cases module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_consts">phantom_api.ph_consts module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_events">phantom_api.ph_events module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_lists">phantom_api.ph_lists module</a></li>
+<li><a class="reference internal" href="#module-phantom_api.ph_users">phantom_api.ph_users module</a></li>
+<li><a class="reference internal" href="#module-phantom_api">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">phantom_api</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>phantom_api package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/phantom_api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="phantom-api-package">
+<h1>phantom_api package<a class="headerlink" href="#phantom-api-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-phantom_api.ph_actions">
+<span id="phantom-api-ph-actions-module"></span><h2>phantom_api.ph_actions module<a class="headerlink" href="#module-phantom_api.ph_actions" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_actions.ph_action">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_actions.</code><code class="descname">ph_action</code><span class="sig-paren">(</span><em>action</em>, <em>container_id</em>, <em>name</em>, <em>targets=[]</em>, <em>action_id=None</em>, <em>action_type=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates action execution in phantom</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>action</strong> (<em>string</em>) – action name to be run (e.g. ip reputation)</li>
+<li><strong>container_id</strong> (<em>int</em>) – id of container on which to run action</li>
+<li><strong>name</strong> (<em>string</em>) – name of action - how it will appear in mission control</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>targets</strong> (<em>[</em><em>string</em><em>] or </em><em>None</em>) – list of dictionaries describing targets.</li>
+<li><strong>action_id</strong> (<em>int</em><em> or </em><em>None</em>) – id of running action - auto-set after run() has been called.</li>
+<li><strong>acton_type</strong> (<em>string</em><em> or </em><em>None</em>) – type of action (e.g. investigative, generic, etc.)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For information on how <code class="docutils literal"><span class="pre">targets</span></code> should be configured please see the phantom REST API
+documentation -or- use <code class="docutils literal"><span class="pre">add_target()</span></code> to make this simpler.</p>
+</div>
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_action.add_target">
+<code class="descname">add_target</code><span class="sig-paren">(</span><em>assets</em>, <em>parameters</em>, <em>app_id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.add_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds targets to the action. Targets indicate the asset, parameters,
+and apps the action should be run with.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>assets</strong> (<em>[</em><em>string</em><em>]</em>) – List of asset names against which this action should be run.</li>
+<li><strong>parameters</strong> (<em>[</em><em>dict</em><em>]</em>) – List of dictionaries describing the parameter name and value for the action.</li>
+<li><strong>app_id</strong> (<em>[</em><em>int</em><em>]</em>) – id of the app</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Adding ip reputation action with the virus total app for two different ips:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">action</span> <span class="o">=</span> <span class="n">ph_action</span><span class="p">(</span><span class="s1">&#39;ip reputation&#39;</span><span class="p">,</span> <span class="mi">1069</span><span class="p">,</span> <span class="s1">&#39;vt ip reputation&#39;</span><span class="p">)</span>
+<span class="n">action</span><span class="o">.</span><span class="n">add_target</span><span class="p">([</span><span class="s1">&#39;virustotal&#39;</span><span class="p">],</span> <span class="p">[{</span><span class="s1">&#39;ip&#39;</span><span class="p">:</span> <span class="s1">&#39;8.8.8.8&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;ip&#39;</span><span class="p">:</span> <span class="s1">&#39;1.1.1.1&#39;</span><span class="p">}],</span> <span class="mi">35</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">app_id can be retrieved by going to the apps-&gt;app_name-&gt;configure new asset. The app id can
+bet determined in the url.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_action.cancel">
+<code class="descname">cancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels running action.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if action fails to be cancelled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if action cancelled.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Cancels action after <code class="docutils literal"><span class="pre">run()</span></code> is called:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">action</span> <span class="o">=</span> <span class="n">ph_actions</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">action</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">actoin</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span> <span class="c1"># action cancelled</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Use this instance method if you either have already run <cite>run()</cite> or you
+manually configured the action_id attribute of the object. Otherwise,
+use the class method <code class="docutils literal"><span class="pre">ph_action.cancel_action()</span></code>.</p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_actions.ph_action.cancel_action">
+<em class="property">classmethod </em><code class="descname">cancel_action</code><span class="sig-paren">(</span><em>action_id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.cancel_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels action.</p>
+<p>This should be used if you want to cancel an action for which
+you already know the <code class="docutils literal"><span class="pre">action_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_id</strong> (<em>int</em>) – id of running action.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if action fails to be cancelled.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if action cancelled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Cancel the action:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_action</span><span class="o">.</span><span class="n">cancel_action</span><span class="p">(</span><span class="mi">444</span><span class="p">)</span> <span class="c1"># cancels action</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_actions.ph_action.get_action_status">
+<em class="property">classmethod </em><code class="descname">get_action_status</code><span class="sig-paren">(</span><em>action_id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.get_action_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns status of action.</p>
+<p>This should be used if you want to get the status of an action for which
+you already know the <code class="docutils literal"><span class="pre">action_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_id</strong> (<em>int</em>) – id of running action.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Get action status:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_action</span><span class="o">.</span><span class="n">get_action_status</span><span class="p">(</span><span class="mi">444</span><span class="p">)</span> <span class="c1"># returns action status</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_action.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders a dictionary representation of the object that could easily be convered to JSON
+with <code class="docutils literal"><span class="pre">json.loads()</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary representation of action.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_action.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to run a phantom action.</p>
+<p>After <code class="docutils literal"><span class="pre">run()</span></code> is called the action_id is set on the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – If action fails, exception is raised.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns the action run id of the phanton action.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[int]</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_action.status">
+<code class="descname">status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_action.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the status of a running action.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Actions status.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Retrieve an action status after <code class="docutils literal"><span class="pre">run()</span></code> is called:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">action</span> <span class="o">=</span> <span class="n">ph_actions</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">action</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">actoin</span><span class="o">.</span><span class="n">status</span><span class="p">()</span> <span class="c1"># action status returned</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Use this instance method if you either have already run <cite>run()</cite> or you
+manually configured the action_id attribute of the object. Otherwise,
+use the class method <code class="docutils literal"><span class="pre">ph_action.get_action_status</span></code>.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="phantom_api.ph_actions.ph_playbook">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_actions.</code><code class="descname">ph_playbook</code><span class="sig-paren">(</span><em>container_id</em>, <em>playbook_id</em>, <em>scope='new'</em>, <em>run_playbook=True</em>, <em>playbook_run_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates playbook execution in phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>container_id</strong> (<em>int</em>) – id of the container against which the playbook should be run.</li>
+<li><strong>playbook_id</strong> (<em>int</em>) – id of the playbook</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>scope</strong> (<em>sting</em>) – Default value is <code class="docutils literal"><span class="pre">`new`</span></code></li>
+<li><strong>run_playbook</strong> (<em>bool</em>) – Run the playbook. Defaults to <code class="docutils literal"><span class="pre">True</span></code></li>
+<li><strong>playbook_run_id</strong> (<em>int</em>) – set after calling <code class="docutils literal"><span class="pre">run()</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">I have not found a reason for setting run_playbook to anything but <code class="docutils literal"><span class="pre">True</span></code></p>
+</div>
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_playbook.cancel">
+<code class="descname">cancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels running playbooks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if action fails to be cancelled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if action cancelled.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Cancels action after <code class="docutils literal"><span class="pre">run()</span></code> is called:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pb</span> <span class="o">=</span> <span class="n">ph_playbook</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">pb</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">pb</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span> <span class="c1"># action cancelled</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Use this instance method if you either have already run <cite>run()</cite> or you
+manually configured the playbook_run_id attribute of the object. Otherwise,
+use the class method <code class="docutils literal"><span class="pre">ph_playbook.cancel_playbook()</span></code>.</p>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_actions.ph_playbook.cancel_playbook">
+<em class="property">classmethod </em><code class="descname">cancel_playbook</code><span class="sig-paren">(</span><em>playbook_run_id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.cancel_playbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels action.</p>
+<p>This should be used if you want to cancel an action for which
+you already know the <code class="docutils literal"><span class="pre">playbook_run_id</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>playbook_run_id</strong> (<em>int</em>) – id of running playbook.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if action fails to be cancelled.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if action cancelled.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Cancel the playbook:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_action</span><span class="o">.</span><span class="n">cancel_playbook</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span> <span class="c1"># cancels playbook</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_actions.ph_playbook.get_playbook_status">
+<em class="property">classmethod </em><code class="descname">get_playbook_status</code><span class="sig-paren">(</span><em>playbook_run_id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.get_playbook_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the status of a playbook.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>playbook_run_id</strong> (<em>int</em>) – Playbook run id from a running playbook or running playbook.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns playbook status.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Get playbook status:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_playbook</span><span class="o">.</span><span class="n">get_playbook_status</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_playbook.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders a dictionary representation of the object that could easily be convered to JSON
+with <code class="docutils literal"><span class="pre">json.loads()</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary representation of playbook.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_playbook.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the playbook</p>
+<p>After <code class="docutils literal"><span class="pre">run()</span></code> is called, the playbook_run_id attribute is set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises Exception if playbook fails to run.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns the response dictionary from the playbook run.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[dict]</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_actions.ph_playbook.status">
+<code class="descname">status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_actions.ph_playbook.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the status of a playbook.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Gets the response details of playbook status.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Get the playbook status:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pb</span> <span class="o">=</span> <span class="n">ph_playbook</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">pb</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Use this if you have already called <code class="docutils literal"><span class="pre">run()</span></code> or you have manually
+set the playbook_run_id of the this playbook object. Otherwise,
+use the class method get_playbook_status.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_assets">
+<span id="phantom-api-ph-assets-module"></span><h2>phantom_api.ph_assets module<a class="headerlink" href="#module-phantom_api.ph_assets" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_assets.ph_asset">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_assets.</code><code class="descname">ph_asset</code><span class="sig-paren">(</span><em>name</em>, <em>product_name</em>, <em>product_vendor</em>, <em>configuration={}</em>, <em>description=''</em>, <em>primary_users=[]</em>, <em>primary_voting=0</em>, <em>secondary_users=[]</em>, <em>secondary_voting=0</em>, <em>tags=[]</em>, <em>asset_type=''</em>, <em>action_whitelist={}</em>, <em>ingest_container_label=None</em>, <em>ingest_interval_mins=None</em>, <em>ingest_poll=True</em>, <em>ingest_start_time='2018-02-09T12:14:43.461Z'</em>, <em>asset_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_assets.ph_asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Used to configure assets in phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>string</em>) – name of asset</li>
+<li><strong>product_name</strong> (<em>string</em>) – product name (must match product name in app definition)</li>
+<li><strong>product_vendor</strong> (<em>string</em>) – product vendor (must match product vendor in app definition)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>configuration</strong> (<em>dict</em>) – configuration parameters for asset</li>
+<li><strong>description</strong> (<em>string</em>) – description of asset</li>
+<li><strong>primary_users</strong> (<em>[</em><em>int</em><em>]</em>) – list of approver user ids</li>
+<li><strong>primary_voting</strong> (<em>[</em><em>int</em><em>]</em>) – number of approver users required for approval</li>
+<li><strong>secondary_users</strong> (<em>[</em><em>int</em><em>]</em>) – list of secondary user ids</li>
+<li><strong>secondary_voting</strong> (<em>[</em><em>int</em><em>]</em>) – number of secondary approver users required for approval</li>
+<li><strong>tags</strong> (<em>[</em><em>string</em><em>]</em>) – list of tags for asset</li>
+<li><strong>action_whitelist</strong> (<em>dict</em>) – dictionary of actions that are whiteliste for roles and/or users</li>
+<li><strong>ingest_container_label</strong> (<em>string</em>) – label name for ingested events by this app</li>
+<li><strong>ingest_interval_mins</strong> (<em>int</em>) – frequency with which app should poll data source</li>
+<li><strong>ingest_poll</strong> (<em>bool</em>) – Polling turned on?</li>
+<li><strong>(</strong><strong>date</strong> (<em>ingest_start_time</em>) – Date polling should start (isoformat)</li>
+<li><strong>asset_id</strong> (<em>int</em>) – id of asset - set after <code class="docutils literal"><span class="pre">save()</span></code> or can be manually configured.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Review phantom REST api details for action_whitelist format</li>
+<li><code class="docutils literal"><span class="pre">ingest_</span></code> arguments are only necessary if this is an ingest app.</li>
+</ul>
+</div>
+<dl class="classmethod">
+<dt id="phantom_api.ph_assets.ph_asset.delete_asset">
+<em class="property">classmethod </em><code class="descname">delete_asset</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_assets.ph_asset.delete_asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes asset.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – Id of the asset to be deleted.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns json data from the command.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_assets.ph_asset.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_assets.ph_asset.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders a dictionary representation of the object that could easily be convered to JSON
+with <code class="docutils literal"><span class="pre">json.loads()</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary representation of asset.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_assets.ph_asset.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_assets.ph_asset.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves asset.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception raised if issue saving asset.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns asset id of newly saved asset.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_assets.ph_asset.update_asset">
+<em class="property">classmethod </em><code class="descname">update_asset</code><span class="sig-paren">(</span><em>id</em>, <em>asset_data</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_assets.ph_asset.update_asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an existing asset.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<em>int</em>) – asset id</li>
+<li><strong>asset_data</strong> (<em>dict</em>) – dictionary of udpated asset info.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns json data from the command.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_base">
+<span id="phantom-api-ph-base-module"></span><h2>phantom_api.ph_base module<a class="headerlink" href="#module-phantom_api.ph_base" title="Permalink to this headline">¶</a></h2>
+<p>This module is for shared methods across the other classes. Used for standardizing, in one place, the way
+http requests/posts/etc/ are made. Additionally standardizes other functionality across all modules within
+the phantom_api package.</p>
+<dl class="function">
+<dt id="phantom_api.ph_base.get_audit_data">
+<code class="descclassname">phantom_api.ph_base.</code><code class="descname">get_audit_data</code><span class="sig-paren">(</span><em>self</em>, <em>audit_data=[]</em>, <em>audit_format='json'</em>, <em>sort='desc'</em>, <em>start=None</em>, <em>end=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_base.get_audit_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves audit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>audit_data</strong> (<em>list</em>) – a list of audit types desired to be returned, * for all, see api docs for acceptable types</li>
+<li><strong>audit_format</strong> (<em>string</em>) – json or csv</li>
+<li><strong>sort</strong> (<em>string</em>) – sort order - defaults to desc</li>
+<li><strong>start</strong> (<em>string</em>) – start date</li>
+<li><strong>end</strong> (<em>string</em>) – end date</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li>if start and end dates aren’t supplied defaults to last 30 days (i think…)</li>
+<li>Must use username/password authentication for this to work - this is a current bug with Phantom API</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="phantom_api.ph_base.query">
+<code class="descclassname">phantom_api.ph_base.</code><code class="descname">query</code><span class="sig-paren">(</span><em>query_type</em>, <em>order='desc'</em>, <em>filters=[]</em>, <em>sort=None</em>, <em>query_id=None</em>, <em>detail=None</em>, <em>pseudo_field=None</em>, <em>page=None</em>, <em>page_size=0</em>, <em>pretty=True</em>, <em>include_expensive=False</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_base.query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows for running queries against Phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>query_type</strong> (<em>string</em>) – type of data to be queries, can be any of the following ‘action_run’, ‘artifact’, ‘asset’, ‘app’, ‘app_run’, ‘container’, ‘playbook_run’, ‘ph_user’, ‘role’</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>order</strong> (<em>string</em>) – sort order for query results (asc, desc)</li>
+<li><strong>filters</strong> (<em>list</em>) – list of dictionaries describing filter critera - see notes</li>
+<li><strong>sort</strong> (<em>string</em>) – sort field to be used in query results</li>
+<li><strong>query_id</strong> (<em>int</em>) – specific id of an object you want to query (e.g. container id, artifact id)</li>
+<li><strong>detail</strong> (<em>string</em>) – when querying a specific object (with <code class="docutils literal"><span class="pre">query_id</span></code>), this can be used to narrow down to only one specific attribute of that object.</li>
+<li><strong>pseudo_field</strong> (<em>string</em>) – get additional information about a specific object (must use <code class="docutils literal"><span class="pre">query_id</span></code>). See phantom docs for complete list. Example (get action runs from a container)</li>
+<li><strong>page</strong> (<em>int</em>) – if paginated results are desired, this is used to indicate page number</li>
+<li><strong>page_size</strong> (<em>int</em>) – if paginated results are desired, this indicates number of recrods returned per page</li>
+<li><strong>pretty</strong> (<em>bool</em>) – should “pretty” versions of data be returned? This adds _pretty_… values to results. (e.g. returns nicely formated date time strings, instead of isoformat)</li>
+<li><strong>include_expensive</strong> (<em>bool</em>) – include even more details that are more resource intensive.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>The filtering capability is much simplified from using the native api. In this case just send filters in a list of dicts like so -
+<code class="docutils literal"><span class="pre">[{'field':</span> <span class="pre">'name_of</span> <span class="pre">field',</span> <span class="pre">'type':</span> <span class="pre">'filter_type',</span> <span class="pre">'value':</span> <span class="pre">'filter_value'}].</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">ph_base</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
+    <span class="s1">&#39;container&#39;</span><span class="p">,</span>
+    <span class="n">filters</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span><span class="s1">&#39;field&#39;</span><span class="p">:</span> <span class="s1">&#39;create_time&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;gte&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">start_date</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;field&#39;</span><span class="p">:</span> <span class="s1">&#39;create_time&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;lte&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">end_date</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;field&#39;</span><span class="p">:</span> <span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;iexact&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;campaign&#39;</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="phantom_api.ph_base.ready">
+<code class="descclassname">phantom_api.ph_base.</code><code class="descname">ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_base.ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks to see if connection is ready (are parameters set)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if connection settings are set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="phantom_api.ph_base.search">
+<code class="descclassname">phantom_api.ph_base.</code><code class="descname">search</code><span class="sig-paren">(</span><em>query</em>, <em>categories=None</em>, <em>page=None</em>, <em>page_size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_base.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: documentation coming soon</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="phantom_api.ph_base.setup_connection">
+<code class="descclassname">phantom_api.ph_base.</code><code class="descname">setup_connection</code><span class="sig-paren">(</span><em>auth_token=None</em>, <em>username=None</em>, <em>password=None</em>, <em>base_url='https://127.0.0.1'</em>, <em>verify_cert=False</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_base.setup_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to setup connection for http conections to phantom REST API.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>auth_token</strong> (<em>string</em>) – Auth token for REST API connections to Phantom.</li>
+<li><strong>username</strong> (<em>string</em>) – GUI username</li>
+<li><strong>password</strong> (<em>string</em>) – GUI password</li>
+<li><strong>base_url</strong> (<em>string</em>) – Base url for phantom - e.g. <a class="reference external" href="https://192.168.116.129">https://192.168.116.129</a> or <a class="reference external" href="https://phantom-hostname">https://phantom-hostname</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">auth_token</span></code> OR <code class="docutils literal"><span class="pre">username</span></code>/<code class="docutils literal"><span class="pre">password</span></code> combo is needed, not both… unless you are querying audit data.
+Then username/password must be used (only authentication method accepted as of 3.0.284.</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_cases">
+<span id="phantom-api-ph-cases-module"></span><h2>phantom_api.ph_cases module<a class="headerlink" href="#module-phantom_api.ph_cases" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_cases.ph_case">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_cases.</code><code class="descname">ph_case</code><span class="sig-paren">(</span><em>name</em>, <em>id=None</em>, <em>is_default=False</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_case" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates the creation of case templates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>string</em>) – name of case template</li>
+<li><strong>id</strong> (<em>int</em>) – id of case template - set after calling <code class="docutils literal"><span class="pre">save()</span></code> or can be configured manually.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_case.add_phase">
+<code class="descname">add_phase</code><span class="sig-paren">(</span><em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_case.add_phase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a phase object to the case.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>phase</strong> (<a class="reference internal" href="#phantom_api.ph_cases.ph_phase" title="phantom_api.ph_cases.ph_phase"><em>ph_phase</em></a>) – A ph_phase object describing a case phase.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception raised if attempting to add a phase with a phase number that already exists.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns true if successfully saved phase.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_case.create_phase_space">
+<code class="descname">create_phase_space</code><span class="sig-paren">(</span><em>order</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_case.create_phase_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and empty space between existing phases to make room for a new phase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>order</strong> (<em>int</em>) – Phase order number where you want to insert the new phase.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception raised if the phase number doesn’t exist.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if space was successfully created.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>There is a three phase case. You want to add a phase between phases 2 and 3:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">ph_case</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">create_phase_space</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">add_phase</span><span class="p">(</span><span class="n">new_phase_3</span><span class="p">)</span> <span class="c1"># phase order defined in phase object</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_case.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_case.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary representation of the case template that can easily be converted to json
+with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary representation of case template object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_case.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_case.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves case template</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if case failed to be saved.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns case template id of newly saved case template.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="phantom_api.ph_cases.ph_phase">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_cases.</code><code class="descname">ph_phase</code><span class="sig-paren">(</span><em>name</em>, <em>order</em>, <em>id=None</em>, <em>template_id=None</em>, <em>tasks=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_phase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Faclilitates the saving of new case phases.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>string</em>) – name of phase</li>
+<li><strong>order</strong> (<em>int</em>) – order number of phase</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>int</em>) – id of saved phase. Set after <code class="docutils literal"><span class="pre">save()</span></code> is called.</li>
+<li><strong>template_id</strong> (<em>int</em>) – Use only if saving a phase to an existing case.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_phase.add_task">
+<code class="descname">add_task</code><span class="sig-paren">(</span><em>task</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_phase.add_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a task to this phase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>task</strong> (<a class="reference internal" href="#phantom_api.ph_cases.ph_task" title="phantom_api.ph_cases.ph_task"><em>ph_task</em></a>) – Task object to add to phase.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception raised if task with same order number has already been added.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns True if save successful.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_phase.create_task_space">
+<code class="descname">create_task_space</code><span class="sig-paren">(</span><em>order</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_phase.create_task_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and empty space between existing tasks to make room for a new task.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>order</strong> (<em>int</em>) – Phase order number where you want to insert the new task.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception raised if the task number doesn’t exist.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if space was successfully created.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>There is a three task phase. You want to add a task between tasks 2 and 3:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">ph_task</span><span class="p">(</span><span class="o">...</span><span class="n">parameters_go_here</span><span class="o">...</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">create_task_space</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">add_task</span><span class="p">(</span><span class="n">new_task_3</span><span class="p">)</span> <span class="c1"># task order defined in phase object</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_phase.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_phase.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary representation of the object that can easily be converted to json
+with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dictionary representation of task object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_phase.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_phase.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the phase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if save is attempted without saving template id.</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if phase failed to save.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns True if phase successfully saved.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This should only be used if you are saving phases to existing case templates.
+If you are creating an entirely new case template. Use the <code class="docutils literal"><span class="pre">add_phase()</span></code> method
+of <code class="docutils literal"><span class="pre">ph_case</span></code> to add this phase to that case, and the call <code class="docutils literal"><span class="pre">save()</span></code> on the case.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="phantom_api.ph_cases.ph_task">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_cases.</code><code class="descname">ph_task</code><span class="sig-paren">(</span><em>name</em>, <em>description</em>, <em>order</em>, <em>id=None</em>, <em>actions=[]</em>, <em>playbooks=[]</em>, <em>phase_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates the saving of case template tasks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>string</em>) – task name</li>
+<li><strong>description</strong> (<em>string</em>) – description of task</li>
+<li><strong>order</strong> (<em>int</em>) – order number of task</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>int</em>) – set after <code class="docutils literal"><span class="pre">save()</span></code> is called.</li>
+<li><strong>actions</strong> (<em>[</em><em>string</em><em>]</em>) – list of actions to be associated with this task (e.g. [‘ip reputation’, ‘ip lookup’])</li>
+<li><strong>playbooks</strong> (<em>[</em><em>dict</em><em>]</em>) – list of dictionary describing playbooks.</li>
+<li><strong>phase_id</strong> (<em>int</em>) – Used only if the task is being saved to an existing phase.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rather than set <code class="docutils literal"><span class="pre">playbooks</span></code> directly, it is easier to use <code class="docutils literal"><span class="pre">add_playbook()</span></code> which allows you to send in
+source repo and playbook name.</p>
+</div>
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_task.add_action">
+<code class="descname">add_action</code><span class="sig-paren">(</span><em>action_name</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_task.add_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds action to task.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_name</strong> (<em>string</em>) – name of action to run.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns true playbook was appended to playbook list.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This does not save the playbook to the task in phantom. It merely
+appends the playbook to the task, for later saving.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_task.add_playbook">
+<code class="descname">add_playbook</code><span class="sig-paren">(</span><em>repository</em>, <em>playbook_name</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_task.add_playbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds playbook to task.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>repository</strong> (<em>string</em>) – respository name</li>
+<li><strong>playbook_name</strong> (<em>string</em>) – name of playbook to be associated.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns true playbook was appended to playbook list.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This does not save the playbook to the task in phantom. It merely
+appends the playbook to the task, for later saving.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_task.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_task.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a dictionary representation of the task object that can easily
+converted to json with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dictionary representation of task object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_cases.ph_task.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_cases.ph_task.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_consts">
+<span id="phantom-api-ph-consts-module"></span><h2>phantom_api.ph_consts module<a class="headerlink" href="#module-phantom_api.ph_consts" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-phantom_api.ph_events">
+<span id="phantom-api-ph-events-module"></span><h2>phantom_api.ph_events module<a class="headerlink" href="#module-phantom_api.ph_events" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_events.ph_artifact">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_events.</code><code class="descname">ph_artifact</code><span class="sig-paren">(</span><em>cef</em>, <em>container_id</em>, <em>label</em>, <em>cef_types={}</em>, <em>description=''</em>, <em>data={}</em>, <em>end_time='2018-02-09T12:14:43.462Z'</em>, <em>ingest_app_id=None</em>, <em>kill_chain=None</em>, <em>name=''</em>, <em>owner_id=None</em>, <em>run_automation=True</em>, <em>severity='medium'</em>, <em>source_data_identifier=0</em>, <em>start_time='2018-02-09T12:14:43.462Z'</em>, <em>tags=[]</em>, <em>artifact_type=''</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates the saving and manipulation of artifacts</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cef</strong> (<em>dict</em>) – cef data representation of artifact.</li>
+<li><strong>container_id</strong> (<em>int</em>) – id of container</li>
+<li><strong>label</strong> (<em>string</em>) – label of container</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>cef_types</strong> (<em>dict</em>) – <code class="docutils literal"><span class="pre">contains</span></code> information for custom data types</li>
+<li><strong>data</strong> (<em>dict</em>) – custom data field</li>
+<li><strong>description</strong> (<em>string</em>) – desctiption of the artifact</li>
+<li><strong>end_time</strong> (<em>string</em>) – end date/time (isoformat) defaults to now</li>
+<li><strong>ingest_app_id</strong> (<em>int</em>) – id of the app the produced the artifact</li>
+<li><strong>kill_chain</strong> (<em>string</em>) – kill chain</li>
+<li><strong>name</strong> (<em>string</em>) – name of artifact</li>
+<li><strong>owner_id</strong> (<em>int</em>) – id of owner</li>
+<li><strong>run_automation</strong> (<em>bool</em>) – determines wether automation should be run on ingest. defaults to True</li>
+<li><strong>severity</strong> (<em>int</em>) – severity of artifact</li>
+<li><strong>source_data_identifier</strong> (<em>string</em>) – id from source system, defaults to ‘0’</li>
+<li><strong>start_time</strong> (<em>string</em>) – start date/time (isoformat) defaults to now</li>
+<li><strong>tags</strong> (<em>list</em>) – list of tags associated with artifact</li>
+<li><strong>artifact_type</strong> (<em>string</em>) – type of artifact</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="phantom_api.ph_events.ph_artifact.id">
+<code class="descname">id</code><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.id" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>int</em> – id of artifact set after <code class="docutils literal"><span class="pre">save()</span></code> is called.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_artifact.delete_artifact">
+<em class="property">classmethod </em><code class="descname">delete_artifact</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.delete_artifact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete existing artifact</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of artifact</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">results of delete</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_artifact.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary representation of the object which could easily be converted to json with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns a dictionary representation of object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_artifact.retrieve_artifact_json">
+<em class="property">classmethod </em><code class="descname">retrieve_artifact_json</code><span class="sig-paren">(</span><em>id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.retrieve_artifact_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get artifact data from phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of artifact</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">returns dictionary representation of the data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_artifact.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves artifact.</p>
+<p>Sets the arifacts id. Sets the <code class="docutils literal"><span class="pre">id</span></code> attribute of the artifact to the new artifact id returned from phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if artifact fails to save.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns a dict indicating if the artifact was saved and the new id. <code class="docutils literal"><span class="pre">{'id':</span> <span class="pre">id_number,</span> <span class="pre">'created',</span> <span class="pre">True_or_False}</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_artifact.update_artifact">
+<em class="property">classmethod </em><code class="descname">update_artifact</code><span class="sig-paren">(</span><em>id</em>, <em>artifact_data</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_artifact.update_artifact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update existing artifact’s data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of artifact</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">results of update</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="phantom_api.ph_events.ph_container">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_events.</code><code class="descname">ph_container</code><span class="sig-paren">(</span><em>label</em>, <em>name</em>, <em>artifacts=[]</em>, <em>asset_id=None</em>, <em>close_time=None</em>, <em>custom_fields={}</em>, <em>data={}</em>, <em>description=''</em>, <em>due_time=None</em>, <em>end_time=None</em>, <em>ingest_app_id=None</em>, <em>kill_chain=None</em>, <em>owner_id=None</em>, <em>run_automation=False</em>, <em>sensitivity='amber'</em>, <em>severity='medium'</em>, <em>source_data_identifier=None</em>, <em>start_time=None</em>, <em>open_time='2018-02-09T12:14:43.462Z'</em>, <em>status='new'</em>, <em>tags=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates saving and manipulating phantom containers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>string</em>) – label for container</li>
+<li><strong>name</strong> (<em>string</em>) – name of container</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>artifacts</strong> (<em>list</em>) – list of dictionaries describing artifacts pertaining to this container. Easier to save container, and then save artifacts to it.</li>
+<li><strong>asset_id</strong> (<em>list</em>) – id of asset ingesting this container</li>
+<li><strong>close_time</strong> (<em>list</em>) – date of container close (isoformat)</li>
+<li><strong>custom_fields</strong> (<em>dict</em>) – dictionary of custom cef fields</li>
+<li><strong>data</strong> (<em>list</em>) – dictionary of custo mdata fields &lt;- i’m not sure how to use this one</li>
+<li><strong>description</strong> (<em>string</em>) – description of container</li>
+<li><strong>due_time</strong> (<em>string</em>) – due date/time of container (isoformat)</li>
+<li><strong>end_time</strong> (<em>string</em>) – end date/time of container (isoformat)</li>
+<li><strong>ingeset_app_id</strong> (<em>int</em>) – id of app producing container</li>
+<li><strong>kill_chain</strong> (<em>string</em>) – kill_chain - see phanto api doc for valid values</li>
+<li><strong>owner_id</strong> (<em>string</em>) – id of owner</li>
+<li><strong>run_automation</strong> (<em>bool</em>) – defaults to false. Determines of automations should run on creation.</li>
+<li><strong>sensitivity</strong> (<em>string</em>) – describes sensitivity of conatiner. defaults to amber.</li>
+<li><strong>severity</strong> (<em>string</em>) – describes severity of container. defaults to medium..</li>
+<li><strong>source_data_identifier</strong> (<em>string</em>) – id from originating system (e.g. jira ticket id)</li>
+<li><strong>start_time</strong> (<em>string</em>) – date/time of start (isoformat)</li>
+<li><strong>open_time</strong> (<em>string</em>) – date/time of open (isoformat), defaults to now.</li>
+<li><strong>status</strong> (<em>string</em>) – status of container (new, open, or closed). Defaults to new</li>
+<li><strong>tags</strong> (<em>list</em>) – list of tags for container.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="phantom_api.ph_events.ph_container.id">
+<code class="descname">id</code><a class="headerlink" href="#phantom_api.ph_events.ph_container.id" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>int</em> – Id of container. Set after running <code class="docutils literal"><span class="pre">save()</span></code></p>
+</dd></dl>
+
+<p class="rubric">Example</p>
+<p>Here is an extremely simple example of how to use this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">container</span> <span class="o">=</span> <span class="n">ph_container</span><span class="p">(</span><span class="s1">&#39;campaign&#39;</span><span class="p">,</span> <span class="s1">&#39;Test ingestion from api.&#39;</span><span class="p">)</span>
+<span class="n">container</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c1"># saves the container</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">container</span><span class="o">.</span><span class="n">id</span><span class="p">)</span> <span class="c1"># prints the id of newly saved container</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_container.add_comment">
+<code class="descname">add_comment</code><span class="sig-paren">(</span><em>comment</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.add_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to add a comment to container.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>comment</strong> (<em>string</em>) – comment to be saved</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">returns id of new comment and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Adding a comment to a container that I previously saved:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">container</span> <span class="o">=</span> <span class="n">ph_container</span><span class="p">(</span><span class="s1">&#39;campaign&#39;</span><span class="p">,</span> <span class="s1">&#39;Test ingestion from api.&#39;</span><span class="p">)</span>
+<span class="n">container</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">container</span><span class="o">.</span><span class="n">add_comment</span><span class="p">(</span><span class="s1">&#39;first comment&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have created your conatainer with <code class="docutils literal"><span class="pre">save()</span></code> and the container <code class="docutils literal"><span class="pre">id</span></code> attribute has already been set.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.add_container_comment">
+<em class="property">classmethod </em><code class="descname">add_container_comment</code><span class="sig-paren">(</span><em>container_id</em>, <em>comment</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.add_container_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to add a comment to container.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>container_id</strong> (<em>int</em>) – id of container</li>
+<li><strong>comment</strong> (<em>string</em>) – comment to be saved</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns id of new comment and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Adding a comment to a container for which I already know the container id:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_container</span><span class="o">.</span><span class="n">add_container_comment</span><span class="p">(</span><span class="mi">1069</span><span class="p">,</span> <span class="s1">&#39;this is a comment&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have not created a container with <code class="docutils literal"><span class="pre">save()</span></code> and you already know a container id.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.add_container_note">
+<em class="property">classmethod </em><code class="descname">add_container_note</code><span class="sig-paren">(</span><em>container_id</em>, <em>note_title</em>, <em>note_content</em>, <em>phase_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.add_container_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a note to a container</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>container_id</strong> (<em>int</em>) – id of container</li>
+<li><strong>note_title</strong> (<em>string</em>) – title of note</li>
+<li><strong>note_content</strong> (<em>string</em>) – content of note</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first"><strong>phase_id</strong> (<em>string</em>) – Defaults to None. Phase to which this note belongs.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns id of new note and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Saving a note to a container for which I already know the container id:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_container</span><span class="o">.</span><span class="n">add_container_note</span><span class="p">(</span><span class="mi">1052</span><span class="p">,</span><span class="s1">&#39;test note2&#39;</span><span class="p">,</span> <span class="s1">&#39;test note 2 title&#39;</span><span class="p">,</span> <span class="s1">&#39;test contents 2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have not created a container with <code class="docutils literal"><span class="pre">save()</span></code> and you already know a container id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_container.add_note">
+<code class="descname">add_note</code><span class="sig-paren">(</span><em>note_title</em>, <em>note_content</em>, <em>phase_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.add_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a note to a container</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>note_title</strong> (<em>string</em>) – title of note</li>
+<li><strong>note_content</strong> (<em>string</em>) – content of note</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first"><strong>phase_id</strong> (<em>string</em>) – Defaults to None. Phase to which this note belongs.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns id of new note and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Adding a note to container after running <code class="docutils literal"><span class="pre">save()</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">container</span> <span class="o">=</span> <span class="n">ph_container</span><span class="p">(</span><span class="s1">&#39;campaign&#39;</span><span class="p">,</span> <span class="s1">&#39;Test ingestion from api.&#39;</span><span class="p">)</span>
+<span class="n">container</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">container</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;test note&#39;</span><span class="p">,</span> <span class="s1">&#39;note title&#39;</span><span class="p">,</span> <span class="s1">&#39;test contents&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have created your conatainer with <code class="docutils literal"><span class="pre">save()</span></code> and the container <code class="docutils literal"><span class="pre">id</span></code> attribute has already been set.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.delete_container">
+<em class="property">classmethod </em><code class="descname">delete_container</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.delete_container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete existing container</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of container</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">results of delete</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.pin_to_container_hud">
+<em class="property">classmethod </em><code class="descname">pin_to_container_hud</code><span class="sig-paren">(</span><em>container_id</em>, <em>message</em>, <em>pin_data</em>, <em>playbook_id=None</em>, <em>pin_type='data'</em>, <em>pin_style=''</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.pin_to_container_hud" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pin an item to the container HUD.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>container_id</strong> (<em>int</em>) – id of container</li>
+<li><strong>message</strong> (<em>string</em>) – message associated with this pin</li>
+<li><strong>pin_data</strong> (<em>string</em>) – data that is actually pinned</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>playbook_id</strong> (<em>[</em><em>type</em><em>]</em>) – Defaults to None. Id of playbook associated with this HUD pin</li>
+<li><strong>pin_type</strong> (<em>string</em>) – Type of pin to create (determins how it is displayed. Defaults to data. Other options are card_small, card_medium, card_large.</li>
+<li><strong>pin_style</strong> (<em>string</em>) – Color of pin when using the card types. (white, purple, or red)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns id of new note and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Pinning a purple card to the container hud for which I already know the container id:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_container</span><span class="o">.</span><span class="n">pin_to_container_hud</span><span class="p">(</span><span class="mi">1052</span><span class="p">,</span> <span class="s1">&#39;test message 2&#39;</span><span class="p">,</span> <span class="s1">&#39;55&#39;</span><span class="p">,</span> <span class="n">pin_type</span><span class="o">=</span><span class="s1">&#39;card_large&#39;</span><span class="p">,</span> <span class="n">pin_style</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have not created a container with <code class="docutils literal"><span class="pre">save()</span></code> and you already know a container id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_container.pin_to_hud">
+<code class="descname">pin_to_hud</code><span class="sig-paren">(</span><em>message</em>, <em>pin_data</em>, <em>playbook_id=None</em>, <em>pin_type='data'</em>, <em>pin_style=''</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.pin_to_hud" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pin an item to the container HUD.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<em>string</em>) – message associated with this pin</li>
+<li><strong>pin_data</strong> (<em>string</em>) – data that is actually pinned</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>playbook_id</strong> (<em>[</em><em>type</em><em>]</em>) – Defaults to None. Id of playbook associated with this HUD pin</li>
+<li><strong>pin_type</strong> (<em>string</em>) – Type of pin to create (determins how it is displayed. Defaults to data. Other options are card_small, card_medium, card_large.</li>
+<li><strong>pin_style</strong> (<em>string</em>) – Color of pin when using the card types. (white, purple, or red)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns id of new note and whether comment save succesfully (see <code class="docutils literal"><span class="pre">save()</span></code> for example)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Pinning a purple card to the container hud for which I already know the container id:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">container</span> <span class="o">=</span> <span class="n">ph_container</span><span class="p">(</span><span class="s1">&#39;campaign&#39;</span><span class="p">,</span> <span class="s1">&#39;Test ingestion from api.&#39;</span><span class="p">)</span>
+<span class="n">container</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">container</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;test note&#39;</span><span class="p">,</span> <span class="s1">&#39;note title&#39;</span><span class="p">,</span> <span class="s1">&#39;test contents&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>Use this if you have created your conatainer with <code class="docutils literal"><span class="pre">save()</span></code> and the container <code class="docutils literal"><span class="pre">id</span></code> attribute has already been set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_container.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary representation of the object which could easily be converted to json with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns a dictionary representation of object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.retrieve_container_json">
+<em class="property">classmethod </em><code class="descname">retrieve_container_json</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.retrieve_container_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get container data from phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of container</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">returns dictionary representation of the data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_events.ph_container.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves container.</p>
+<p>Sets the container’s id. If container already exists, just sets id of object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Raises exception if container fails to save.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns a dict indicating if the container was saved and the new id. <code class="docutils literal"><span class="pre">{'id':</span> <span class="pre">id_number,</span> <span class="pre">'created',</span> <span class="pre">True_or_False}</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_events.ph_container.update_container">
+<em class="property">classmethod </em><code class="descname">update_container</code><span class="sig-paren">(</span><em>id</em>, <em>container_data</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_events.ph_container.update_container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update existing container’s data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – id of container</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">results of update</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_lists">
+<span id="phantom-api-ph-lists-module"></span><h2>phantom_api.ph_lists module<a class="headerlink" href="#module-phantom_api.ph_lists" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_lists.ph_list">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_lists.</code><code class="descname">ph_list</code><span class="sig-paren">(</span><em>name</em>, <em>id=None</em>, <em>content=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates the creation and manipulation of lists</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>name</strong> (<em>string</em>) – name of list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>int</em>) – set after save is called, or can be set manually.</li>
+<li><strong>content</strong> (<em>list</em>) – list of phantom list content i.e. ([[col 1, col2, col3], [col1, col2, col3]])</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="phantom_api.ph_lists.ph_list.format_list_json">
+<code class="descname">format_list_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.format_list_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_lists.ph_list.get_list">
+<em class="property">classmethod </em><code class="descname">get_list</code><span class="sig-paren">(</span><em>list_name</em>, <em>id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list_name</strong> (<em>string</em>) – Name of phantom list to get</li>
+<li><strong>id</strong> (<em>int</em>) – Defaults to None. Id of phantom list.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if list is not found.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns found list.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#phantom_api.ph_lists.ph_list" title="phantom_api.ph_lists.ph_list">ph_list</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_lists.ph_list.get_list_csv">
+<em class="property">classmethod </em><code class="descname">get_list_csv</code><span class="sig-paren">(</span><em>list_name</em>, <em>row_separator='%0A'</em>, <em>field_separator='</em>, <em>'</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.get_list_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list csv</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>list_name</strong> (<em>string</em>) – name of list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>row_separator</strong> (<em>string</em>) – separator for rows - defaults to %0A</li>
+<li><strong>field_separator</strong> (<em>string</em>) – separator for fields defaults to ,</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – [description]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_lists.ph_list.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current data from phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">returns True if successully refreshed data</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_lists.ph_list.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>overwrite=True</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves list to phantom</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first"><strong>overwrite</strong> (<em>bool</em>) – Defaults to True. If true will overrite existing list data.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – [description]</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – [description]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">[description]</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[type]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_lists.ph_list.search_list">
+<code class="descname">search_list</code><span class="sig-paren">(</span><em>column_num</em>, <em>search_val</em>, <em>find_all=True</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.search_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches a list for data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>column_num</strong> (<em>int</em>) – Column number that you want searched - since there are no column names</li>
+<li><strong>(</strong><strong>string</strong> (<em>search_val</em>) – What to search for</li>
+<li><strong>find_all</strong> (<em>bool</em>) – Defaults to True. Stop at first match if False, or return all results.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if search column_num does not exist in list.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns list of found rows</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_lists.ph_list.update_list">
+<code class="descname">update_list</code><span class="sig-paren">(</span><em>append_data=None</em>, <em>delete_rows=None</em>, <em>update_rows=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_lists.ph_list.update_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an existing list</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>append_data</strong> (<em>list</em>) – Data to append <code class="docutils literal"><span class="pre">[[col1,</span> <span class="pre">col2,</span> <span class="pre">col3],</span> <span class="pre">[col1,</span> <span class="pre">col2,</span> <span class="pre">col3]]</span></code></li>
+<li><strong>delete_rows</strong> (<em>list</em>) – List of rows to delete</li>
+<li><strong>update_rows</strong> (<em>dict</em>) – Dict where keys are row numbers and values are column data in list format.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if you try to append data,  but the columns in your data don’t match the number of columns in the list</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if you try to delete row that doesn’t exist</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if you try to update a row that doesn’t exist or there is a mismatch in column count.</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if updating the list fails.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if successfully saved.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api.ph_users">
+<span id="phantom-api-ph-users-module"></span><h2>phantom_api.ph_users module<a class="headerlink" href="#module-phantom_api.ph_users" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="phantom_api.ph_users.ph_role">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_users.</code><code class="descname">ph_role</code><span class="sig-paren">(</span><em>name</em>, <em>description</em>, <em>permissions=[]</em>, <em>users=[]</em>, <em>role_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_role" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates the creation of roles</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>string</em>) – name of role</li>
+<li><strong>description</strong> (<em>string</em>) – descriptoin of role</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>permissions</strong> (<em>list</em>) – list of dictionaries describing permissions (see phantom api doc for formatting)</li>
+<li><strong>users</strong> (<em>list</em>) – list of user ids for users to be in role</li>
+<li><strong>role_id</strong> (<em>int</em>) – id of role. set after <code class="docutils literal"><span class="pre">save()</span></code> is called.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_role.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_role.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders a dictionary representation of the object which can easily be converted to json with <code class="docutils literal"><span class="pre">json.loads()</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dictionary representation of the object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_role.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_role.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the new role</p>
+<p>Sets role_id upon successful save</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if fails to save role</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Creating a new role an saving it:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">role</span> <span class="o">=</span> <span class="n">ph_role</span><span class="p">(</span>
+    <span class="s1">&#39;Test Role&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Testing role creation&#39;</span><span class="p">,</span>
+    <span class="n">permissions</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;containers&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;view&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s1">&#39;edit&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s1">&#39;delete&#39;</span><span class="p">:</span> <span class="kc">True</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">role</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">id of new role.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_role.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>add_users=[]</em>, <em>remove_users=[]</em>, <em>update_permissions=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_role.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update role</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>add_users</strong> (<em>list</em>) – list of user ids to add to role</li>
+<li><strong>remove_users</strong> (<em>list</em>) – list of users to remove from role.</li>
+<li><strong>update_permission</strong> (<em>list</em>) – dictionary of new permissions</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>Use this if you have created this role with <code class="docutils literal"><span class="pre">save()</span></code> and the role_id is already set.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_users.ph_role.update_role">
+<em class="property">classmethod </em><code class="descname">update_role</code><span class="sig-paren">(</span><em>role_id</em>, <em>remove_users=[]</em>, <em>add_users=[]</em>, <em>update_permissions=None</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_role.update_role" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update role</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>role_id</strong> (<em>int</em>) – id of role</li>
+<li><strong>add_users</strong> (<em>list</em>) – list of user ids to add to role</li>
+<li><strong>remove_users</strong> (<em>list</em>) – list of users to remove from role.</li>
+<li><strong>update_permission</strong> (<em>list</em>) – dictionary of new permissions</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>Use this for existing roles which you already know the ids of.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="phantom_api.ph_users.ph_user">
+<em class="property">class </em><code class="descclassname">phantom_api.ph_users.</code><code class="descname">ph_user</code><span class="sig-paren">(</span><em>username=None</em>, <em>first_name=None</em>, <em>last_name=None</em>, <em>email=None</em>, <em>title=None</em>, <em>location=None</em>, <em>time_zone=None</em>, <em>is_ad_user=False</em>, <em>password=None</em>, <em>roles=[]</em>, <em>two_fa=False</em>, <em>two_fa_username=None</em>, <em>user_id=None</em>, <em>allowed_ips=[]</em>, <em>automation_user=False</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Facilitates creation and manipulation of users in phantom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>string</em>) – name of user</li>
+<li><strong>first_name</strong> (<em>string</em>) – first name of user</li>
+<li><strong>last_name</strong> (<em>string</em>) – last name of user</li>
+<li><strong>email</strong> (<em>string</em>) – email of user</li>
+<li><strong>title</strong> (<em>string</em>) – title of user</li>
+<li><strong>location</strong> (<em>string</em>) – location of user</li>
+<li><strong>time_zone</strong> (<em>string</em>) – timezone of user</li>
+<li><strong>is_ad_user</strong> (<em>bool</em>) – determines if users is ad or local acount</li>
+<li><strong>password</strong> (<em>string</em>) – password of user</li>
+<li><strong>roles</strong> (<em>list</em>) – list of role ids to which the user will belong</li>
+<li><strong>two_fa</strong> (<em>bool</em>) – 2fa in place?</li>
+<li><strong>two_fa_username</strong> (<em>string</em>) – 2fa username</li>
+<li><strong>user_id</strong> (<em>int</em>) – id of user, set with <code class="docutils literal"><span class="pre">save()</span></code></li>
+<li><strong>allowed_ips</strong> (<em>list</em>) – list of allowed_ips for access</li>
+<li><strong>automation_user</strong> (<em>bool</em>) – is automation user?</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_user.render_dictionary">
+<code class="descname">render_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_user.render_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns dictionary representation of object that can easily be converted to json with <code class="docutils literal"><span class="pre">json.loads</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dictionary representation of object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_user.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_user.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves user</p>
+<p>Sets user_id after successful save</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code> – Exception if error saving user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">id of newly saved user</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="phantom_api.ph_users.ph_user.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>remove_roles=[]</em>, <em>add_roles=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_user.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an existing user</p>
+<p>Remove or add roles</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>remove_roles</strong> (<em>list</em>) – list of role ids to remove</li>
+<li><strong>add_roles</strong> (<em>list</em>) – list of role ids to add</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns update user response json</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Saving a user, then updating:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">user</span> <span class="o">=</span> <span class="n">ph_user</span><span class="p">(</span>
+<span class="n">username</span><span class="o">=</span><span class="s1">&#39;testerman&#39;</span><span class="p">,</span>
+    <span class="n">first_name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span>
+    <span class="n">last_name</span><span class="o">=</span><span class="s1">&#39;man&#39;</span><span class="p">,</span>
+    <span class="n">email</span><span class="o">=</span><span class="s1">&#39;test.test@test.com&#39;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s1">&#39;test password&#39;</span>
+<span class="p">)</span>
+
+<span class="n">user</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+
+<span class="n">user</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">add_roles</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>This should be used if you have already run save, or manually set the user_id attribute.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="phantom_api.ph_users.ph_user.update_user">
+<em class="property">classmethod </em><code class="descname">update_user</code><span class="sig-paren">(</span><em>user_id</em>, <em>remove_roles=[]</em>, <em>add_roles=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#phantom_api.ph_users.ph_user.update_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an existing user</p>
+<p>Remove or add roles</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>user_id</strong> (<em>int</em>) – id of the user</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first simple">
+<li><strong>remove_roles</strong> (<em>list</em>) – list of role ids to remove</li>
+<li><strong>add_roles</strong> (<em>list</em>) – list of role ids to add</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">returns update user response json</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p>Update a user with user id of 15:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ph_user</span><span class="o">.</span><span class="n">update_user</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">remove_roles</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+<p class="rubric">Notes</p>
+<p>This should be used if you have not run <code class="docutils literal"><span class="pre">save()</span></code> but already know the user id</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-phantom_api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-phantom_api" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ian Forrest.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
