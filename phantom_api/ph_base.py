@@ -320,7 +320,6 @@ def search(
    
 #audit data
 def get_audit_data(
-    self,
     audit_data=[],
     audit_format='json',
     sort='desc',
