@@ -200,7 +200,12 @@ def _format_filters(filters):
                 + ', '.join(ph_consts.QUERY_FILTERS) + '.'
             )
         else:
-            formatted_filter += '&_filter_' + filter['field'] + '__' + filter['type'] + '="' + str(filter['value']) + '"'
+            formatted_filter += '&_filter_' + filter['field'] + '__' + filter['type'] + '='
+            if filter['type'] == 'in' and type(filter['value']) == list:
+                if type(filter['value'][0]) == int:
+                    formatted_filter += ','.join(map(lambda x: str(x), filter['value']))
+            else:
+                formatted_filter += '"' + str(filter['value']) + '"'
 
     return formatted_filter
 

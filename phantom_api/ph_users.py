@@ -196,6 +196,62 @@ class ph_user(object):
 
         return response
 
+    def delete(self):
+        """Delete an existing user
+
+        Delete an existing user
+
+        Args:
+            user_id (int): id of the user
+
+        Returns:
+            dict: returns delete user response json
+
+        Example:
+            Save user, and then delete. Delete a user with user id of 15::
+
+                user = ph_user(
+                username='testerman',
+                    first_name='test',
+                    last_name='man',
+                    email='test.test@test.com',
+                    password='test password'
+                )
+
+                user.save()
+
+                user.update(add_roles=[4,1])
+
+        """
+        return(ph_user.delete_user(self.user_id))
+
+    @classmethod
+    def delete_user(cls, user_id):
+        """Delete an existing user
+
+        Delete an existing user
+
+        Args:
+            user_id (int): id of the user
+
+        Returns:
+            dict: returns delete user response json
+
+        Example:
+            Delete a user with user id of 15::
+
+                ph_user.delete_user(15)
+
+        Notes:
+            This should be used if you have not run ``save()`` but already know the user id
+        """
+        response = ph_base._send_request(
+            '/rest/ph_user/' + str(user_id),
+            'delete'
+        )
+
+        return response
+
 class ph_role(object):
     """Facilitates the creation of roles
 

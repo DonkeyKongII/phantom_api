@@ -123,6 +123,18 @@ class ph_case(object):
 
         return template_json
 
+    def delete(self):
+        return ph_case.delete(self.id)
+
+    @classmethod
+    def delete_case(cls, case_id):
+        response = ph_base._send_request(
+            '/rest/workflow_template/' + str(case_id),
+            'delete' 
+        )
+
+        return response
+
 class ph_phase(object):
     """Faclilitates the saving of new case phases.
 
@@ -387,3 +399,15 @@ class ph_task(object):
             task_json['phase_id'] = self.phase_id
         
         return task_json
+
+    @classmethod
+    def update_task(cls, task_id, task_json):
+        response = ph_base._send_request(
+            '/rest/workflow_task_template/' + str(task_id),
+            'post',
+            payload=json.dumps(task_json),
+            content_type='application/json'
+        )
+
+        return response
+
