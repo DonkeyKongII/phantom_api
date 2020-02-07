@@ -60,8 +60,6 @@ class ph_action(object):
         if not(response.get(ph_consts.ACTION_SUCCESS_KEY)):
             raise Exception(response[ph_consts.ACTION_FAILED_MESSAGE_KEY])
 
-
-
         self.action_id = response[ph_consts.ACTION_RUN_ID]
 
         return response
@@ -106,6 +104,20 @@ class ph_action(object):
         }
 
         return action_json
+
+    def action_results(self):
+        return ph_action.get_action_results(self.action_id)
+
+    @classmethod
+    def get_action_results(cls, action_id):
+    
+
+        response = ph_base._send_request(
+            '/rest/app_run?include_expensive=True&_filter_action_run_id=' + str(action_id),
+            'get'
+        )
+
+        return(response)
 
     def status(self):
         """Returns the status of a running action.

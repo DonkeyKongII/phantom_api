@@ -15,6 +15,7 @@ from ph_users import ph_user
 from ph_users import ph_role
 from ph_actions import ph_action
 from ph_actions import ph_playbook
+from ph_apps import ph_app
 #from ph_events import ph_container
 #from ph_cases import ph_case
 

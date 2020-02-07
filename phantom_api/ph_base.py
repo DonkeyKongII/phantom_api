@@ -75,9 +75,9 @@ def _send_request(url, method, payload=None, content_type=None):
     request_func = getattr(requests, method.lower())
     
     auth = None
-    if 'audit' in url or 'ph_user' in url or 'action_run' in url or _ph_connect['header'] is None:
+    if 'audit' in url or 'ph_user' in url or _ph_connect['header'] is None:
         auth=(_ph_connect['username'], _ph_connect['password'])
-    
+
     if request_func is None:
         raise ValueError('Incorrect requests action specified')
 
